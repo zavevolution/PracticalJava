@@ -6,7 +6,7 @@ public class Box {
     double depth;
 
     void volume() {
-        System.out.println("Обєм рівний ");
+        System.out.print("Обєм рівний ");
         System.out.println(width * height * depth);
     }
 }
