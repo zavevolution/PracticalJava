@@ -2,19 +2,14 @@ package book;
 
 public class Less {
     public static void main(String[] args) {
-        Box mybox = new Box();
-        Box mybox2 = new Box();
+        Box mybox = new Box(10.0, 20.0, 15.0);
+        Box mybox2 = new Box(3, 6, 9);
+        double vol;
 
-        mybox.width = 10;
-        mybox.height = 20;
-        mybox.depth = 15;
+        vol = mybox.volume();
+        System.out.println("Обєм рівен " + vol);
 
-        mybox2.width = 3;
-        mybox2.height = 6;
-        mybox2.depth = 9;
-
-        System.out.println("Обєм рівен " + mybox.volume());
-
-        System.out.println("Обєм рівен " + mybox2.volume());
+        vol = mybox2.volume();
+        System.out.println("Обєм рівен " + vol);
     }
 }
